@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=80", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nodus-extensions"
+version = "0.1.0"
+description = "Typed, versioned, sandboxed extension loading: manifest validation, hook lifecycle, sandbox runners"
+requires-python = ">=3.11"
+license = "MIT"
+authors = [{ name = "Masterplanner25" }]
+dependencies = ["nodus-schema>=0.1.0", "nodus-observability>=0.1.0"]
+
+[project.optional-dependencies]
+test = ["pytest>=8.0", "pytest-asyncio>=0.21"]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["nodus_extensions*"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
