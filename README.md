@@ -12,7 +12,7 @@ No required external dependencies — pure stdlib.
 > (`import "nodus-extension"`). This package is a standalone Tier 4 library for
 > building extension-hosting platforms in Python.
 
-> **Status:** v0.1.0 — prepared, not yet published.
+> **Status:** v0.1.0 — published on [PyPI](https://pypi.org/project/nodus-extensions/).
 
 ---
 
